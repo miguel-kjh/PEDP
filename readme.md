@@ -1,4 +1,6 @@
-<h1>Planning-Enhanced Dialog Policy</h1>
+# PEDP
+“Think Before You Speak”: Improving Multi-Action Dialog Policy by Planning Single-Action Dialogs  [IJCAI-22 long oral presentation](https://arxiv.org/pdf/2204.11481.pdf)
+
 This is the codebase for the proposed multi-action 
 dialog policy model PEDP and all the SL-based baseline models (gCAS, DiaMultiClass, DiaMultiDense, and DiaSeq).
 
@@ -14,14 +16,17 @@ and prepare the environment with Anaconda.
 
 <h3>Data</h3>
 We report results on: 
+
 1. [MultiWOZ](https://arxiv.org/abs/1810.00278).
 Please download the data from [here](https://drive.google.com/file/d/1r8-1h7jyolR5lsETP0TxJty4UIKESN-d/view?usp=sharing) and unzip under <code>./data</code> directory.
+
 2. [SGD](https://arxiv.org/abs/1909.05855). Please download the data from [here](https://drive.google.com/file/d/1I-5w4CTsYnOrFm1TMMrc62OWtcBq3vAm/view?usp=sharing) and unzip under <code>./sgd_data</code> directory.
 
 ---
 
 <h3>Run</h3>
 To reproduce the results on MultiWOZ, execute:
+
 ```
 python -u main.py --pedp --residual
 ```
@@ -46,8 +51,9 @@ Dataset schema is defined in <code>config_multiwoz.py</code> and <code>./sgd_dat
 ---
 
 <h3>Results</h3>
-We strongly recommend using tensorboard to check the results.
+You can use tensorboard to check the results.
 Execute:
+
 ```
 tensorboard --bind_all --logdir=./log/tb/[file name]
 ```
