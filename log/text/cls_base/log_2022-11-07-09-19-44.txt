@@ -1,0 +1,38 @@
+INFO:root:args settings: Namespace(name='base', seed=3598, cpus=6, trail=1, sgd=False, debug=False, log_interval=10, lr=0.0003, epoch=100, batchsz=32, dropout=0.1, clip=10, data_ratio=100, pedp=False, seq=False, cls=True, md=False, gcas=False, residual=True, paths=3, aggr_type='avg', pred_gamma=10.0, plan_gamma=0, state_gamma=0, term_gamma=0.1, beam=False, gumbel=False, tau_plan_a=0.001, tau_plan_t=0.001, temperature=0.001, checkpoint_dir='./checkpoint/cls_base', log_dir='./log/text/cls_base', tb_dir='./log/tb/cls_base', data_dir='./data/multiwoz', nlg_dir='./nlg/template/multiwoz', beta_upper=1, beta_decay=36, beta_lower=0.25, KL_gamma=0, curriculum=1, h_dim=200, search_curriculum=1)
+INFO:root:Load processed data file
+INFO:root:====================================================================================================
+INFO:root:Source Loaded: Total 56750 samples
+INFO:root:MultiWOZ | DataLoader train | Total Batches 1706 | Batch Size 32 | time 11.7
+INFO:root:====================================================================================================
+INFO:root:====================================================================================================
+INFO:root:Source Loaded: Total 7365 samples
+INFO:root:MultiWOZ | DataLoader valid | Total Batches 225 | Batch Size 32 | time 1.21
+INFO:root:====================================================================================================
+INFO:root:====================================================================================================
+INFO:root:Source Loaded: Total 7372 samples
+INFO:root:MultiWOZ | DataLoader test | Total Batches 226 | Batch Size 32 | time 1.22
+INFO:root:====================================================================================================
+INFO:root:DiaMultiClass(
+  (dropout): Dropout(p=0.1, inplace=False)
+  (net): Sequential(
+    (0): Linear(in_features=553, out_features=200, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=200, out_features=200, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=200, out_features=166, bias=True)
+  )
+  (loss): BCEWithLogitsLoss()
+)
+INFO:root:Planner initialization is done
+INFO:root:start imitation
+INFO:root:TRAIN | step 0 | Loss 6.96257 | Loss-plan 0.0 | Loss-pred 0.696257 | Loss-state 0.0 | Loss-KL 0.0 | Loss-Term 0.0 | | Plan F1 0.0 | Plan P 0.0 | Plan R 0.0| Pred F1 0.03509 | Pred P 0.01849 | Pred R 0.4012| State F1 0.08371 | State P 0.04419 | State R 1.0| Term F1 1.0 | Term P 1.0 | Term R 1.0
+INFO:root:TRAIN | step 10 | Loss 6.74774 | Loss-plan 0.0 | Loss-pred 0.674774 | Loss-state 0.0 | Loss-KL 0.0 | Loss-Term 0.0 | | Plan F1 0.0 | Plan P 0.0 | Plan R 0.0| Pred F1 0.03662 | Pred P 0.01953 | Pred R 0.3609| State F1 0.09606 | State P 0.05094 | State R 1.0| Term F1 1.0 | Term P 1.0 | Term R 1.0
+INFO:root:TRAIN | step 20 | Loss 6.23163 | Loss-plan 0.0 | Loss-pred 0.623163 | Loss-state 0.0 | Loss-KL 0.0 | Loss-Term 0.0 | | Plan F1 0.0 | Plan P 0.0 | Plan R 0.0| Pred F1 0.03856 | Pred P 0.02162 | Pred R 0.2131| State F1 0.09656 | State P 0.05119 | State R 1.0| Term F1 1.0 | Term P 1.0 | Term R 1.0
+INFO:root:TRAIN | step 30 | Loss 5.33803 | Loss-plan 0.0 | Loss-pred 0.533803 | Loss-state 0.0 | Loss-KL 0.0 | Loss-Term 0.0 | | Plan F1 0.0 | Plan P 0.0 | Plan R 0.0| Pred F1 0.03497 | Pred P 0.02221 | Pred R 0.1011| State F1 0.09841 | State P 0.05224 | State R 1.0| Term F1 1.0 | Term P 1.0 | Term R 1.0
+INFO:root:TRAIN | step 40 | Loss 4.00105 | Loss-plan 0.0 | Loss-pred 0.400105 | Loss-state 0.0 | Loss-KL 0.0 | Loss-Term 0.0 | | Plan F1 0.0 | Plan P 0.0 | Plan R 0.0| Pred F1 0.02154 | Pred P 0.01938 | Pred R 0.02934| State F1 0.09792 | State P 0.05193 | State R 1.0| Term F1 1.0 | Term P 1.0 | Term R 1.0
+INFO:root:TRAIN | step 50 | Loss 2.57133 | Loss-plan 0.0 | Loss-pred 0.257133 | Loss-state 0.0 | Loss-KL 0.0 | Loss-Term 0.0 | | Plan F1 0.0 | Plan P 0.0 | Plan R 0.0| Pred F1 0.004244 | Pred P 0.006771 | Pred R 0.003203| State F1 0.0931 | State P 0.04928 | State R 1.0| Term F1 1.0 | Term P 1.0 | Term R 1.0
+INFO:root:TRAIN | step 60 | Loss 1.49473 | Loss-plan 0.0 | Loss-pred 0.149473 | Loss-state 0.0 | Loss-KL 0.0 | Loss-Term 0.0 | | Plan F1 0.0 | Plan P 0.0 | Plan R 0.0| Pred F1 0.0 | Pred P 0.0 | Pred R 0.0| State F1 0.09628 | State P 0.05104 | State R 1.0| Term F1 1.0 | Term P 1.0 | Term R 1.0
+INFO:root:TRAIN | step 70 | Loss 1.09114 | Loss-plan 0.0 | Loss-pred 0.109114 | Loss-state 0.0 | Loss-KL 0.0 | Loss-Term 0.0 | | Plan F1 0.0 | Plan P 0.0 | Plan R 0.0| Pred F1 0.0 | Pred P 0.0 | Pred R 0.0| State F1 0.09711 | State P 0.05151 | State R 1.0| Term F1 1.0 | Term P 1.0 | Term R 1.0
+INFO:root:TRAIN | step 80 | Loss 0.91211 | Loss-plan 0.0 | Loss-pred 0.091211 | Loss-state 0.0 | Loss-KL 0.0 | Loss-Term 0.0 | | Plan F1 0.0 | Plan P 0.0 | Plan R 0.0| Pred F1 0.0 | Pred P 0.0 | Pred R 0.0| State F1 0.09571 | State P 0.05072 | State R 1.0| Term F1 1.0 | Term P 1.0 | Term R 1.0
+INFO:root:TRAIN | step 90 | Loss 0.922194 | Loss-plan 0.0 | Loss-pred 0.0922194 | Loss-state 0.0 | Loss-KL 0.0 | Loss-Term 0.0 | | Plan F1 0.0 | Plan P 0.0 | Plan R 0.0| Pred F1 0.0 | Pred P 0.0 | Pred R 0.0| State F1 0.101 | State P 0.05371 | State R 1.0| Term F1 1.0 | Term P 1.0 | Term R 1.0
+INFO:root:TRAIN | step 100 | Loss 0.884694 | Loss-plan 0.0 | Loss-pred 0.0884694 | Loss-state 0.0 | Loss-KL 0.0 | Loss-Term 0.0 | | Plan F1 0.0 | Plan P 0.0 | Plan R 0.0| Pred F1 0.0 | Pred P 0.0 | Pred R 0.0| State F1 0.09534 | State P 0.05053 | State R 1.0| Term F1 1.0 | Term P 1.0 | Term R 1.0

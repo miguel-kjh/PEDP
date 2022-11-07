@@ -1,0 +1,14 @@
+INFO:root:args settings: Namespace(name='base', seed=4122, cpus=6, trail=1, sgd=False, debug=False, log_interval=10, lr=0.000785927677712986, epoch=100, batchsz=32, dropout=0.2, clip=0.5, data_ratio=100, pedp=True, seq=False, cls=False, md=False, gcas=False, residual=True, paths=3, aggr_type='avg', pred_gamma=12.1184526606073, plan_gamma=0.311015333058422, state_gamma=0.31349603409602, term_gamma=0.0411142841203765, beam=False, gumbel=True, tau_plan_a=0.001, tau_plan_t=0.001, temperature=0.001, checkpoint_dir='./checkpoint/pedp_base', log_dir='./log/text/pedp_base', tb_dir='./log/tb/pedp_base', data_dir='./data/multiwoz', nlg_dir='./nlg/template/multiwoz', beta_upper=1, beta_decay=36, beta_lower=0.25, h_dim=200)
+INFO:root:Load processed data file
+INFO:root:====================================================================================================
+INFO:root:Source Loaded: Total 56750 samples
+INFO:root:MultiWOZ | DataLoader train | Total Batches 1706 | Batch Size 32 | time 11.2
+INFO:root:====================================================================================================
+INFO:root:====================================================================================================
+INFO:root:Source Loaded: Total 7365 samples
+INFO:root:MultiWOZ | DataLoader valid | Total Batches 225 | Batch Size 32 | time 1.89
+INFO:root:====================================================================================================
+INFO:root:====================================================================================================
+INFO:root:Source Loaded: Total 7372 samples
+INFO:root:MultiWOZ | DataLoader test | Total Batches 226 | Batch Size 32 | time 1.2
+INFO:root:====================================================================================================

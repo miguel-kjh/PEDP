@@ -53,7 +53,9 @@ class DiaMultiClass(nn.Module):
         :param s: [b, s_dim]
         :return: hidden_state after several rollout
         """
-        # print(s.shape)
+        #print(s.shape)
+        #print(a_target_gold.shape)
+        #print(s_target_pos.shape)
         mask_cols = torch.LongTensor(range(self.cfg.max_len)).repeat(s.shape[0], 1).to(DEVICE)
         if len(s_target_pos.shape) == 1:
             s_target_pos = s_target_pos.unsqueeze(1)
